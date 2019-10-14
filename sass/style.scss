@@ -1,0 +1,43 @@
+@import "var";
+@import "components";
+@import "mixin";
+.container{
+	width: 80%;
+	background-color: #eee;
+	margin: 0 auto;
+	padding: 10px;
+	section{
+		background-color: #ee89aa;
+		color: #ffffff;
+		h2{
+			text-align: center;
+			padding: 15px;
+			@include coolborder(20px, dotted);
+
+		}
+		ul{
+			li{
+				list-style: none;
+				background-color: #ee99ff;
+				padding: 15px;
+				border-top: 1px solid $bordercolor;
+				border-bottom: 1px solid $bordercolor;
+				a{
+					color: $linkcolor;
+					text-transform: uppercase;
+					&:hover{
+						color: lighten($linkcolor,30%)
+					}
+				}
+				span{
+					text-align: right;
+					background-color: #000;
+					color: #fff;
+					float: right;
+					@extend .button;
+				}
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,4 @@
+@mixin coolborder($radius, $style){
+	border-radius: $radius;
+	border-style: $style;
+}
